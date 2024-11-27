@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Globe - Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!-- Include Bebas Neue font -->
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        #globe-container {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="map.html">Weather Map</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="globe.html">Interactive Globe</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="globe-container"></div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Weather Website</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three-globe"></script>
+    <script src="globe.js"></script>
+</body>
+</html>

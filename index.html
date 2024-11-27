@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> <!-- Include Bebas Neue font -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="map.html">Weather Map</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Welcome to Our Weather Website</h2>
+                <p>Get the latest weather updates for your city.</p>
+                <form id="weather-form">
+                    <input type="text" id="city" placeholder="Enter city name" required>
+                    <button type="submit">Get Weather</button>
+                </form>
+                <div id="weather-result"></div>
+            </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We provide accurate and up-to-date weather information.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Weather Website</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
